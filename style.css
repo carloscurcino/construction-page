@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
+body {
+    background: #c0dbe3;
+    overflow: hidden; 
+    display: flex;
+    margin: 40px;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    font-family: "JetBrains Mono", sans-serif;
+}
+h1{
+    position: absolute; 
+    margin-top: 380px;
+    margin-left: 280px;
+    font-size: 40px;
+    z-index: 1;
+}
+i {
+    font-size: 50px;
+    color: #38b6ff; 
+}
+.social{
+    position: absolute;
+    margin-top: 490px;
+    margin-left: 540px;
+}
+span {
+    position: absolute;
+    margin-top: -50px;
+    margin-left: -150px;
+}
+  .container {
+    margin: 0em auto;
+    margin-top:-4.5em;
+    position: relative;
+  }
+  
+  .container svg {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 0;
+  }
+  svg {
+    width: 745,4px;
+    height: 745,4px;
+  }
+  
+  /*Animation Elements*/
+  .crane-line-one {}
+  .crane-line-two {}
+  .crane-knot {}
+  
+  .star-piece {}
+  .star-cut {opacity: 0;}
+  .star-shadow {opacity: .35}
+  
+  .roller {}
+  .roller-fold {}
+  .roller-fold-shadow {opacity:0.08}
+
+
+  @media screen and (max-width: 985px){
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    h1{
+        position: absolute; 
+        margin-top: 100px;
+        margin-left: 5vh;
+        font-size: 20px;
+        z-index: 1;
+    }
+    i {
+        font-size: 30px;
+        color: #38b6ff; 
+    }
+    .social{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        position: absolute;
+        margin-top: 490px;
+        margin-left: 3vh;
+    }
+    
+    .container {
+        margin: auto;
+        margin-top:-4.5em;
+        position: relative;
+        overflow: hidden;
+    }
+    .container svg {
+        display: block;
+        margin-left: -14.2vh;
+        margin-right: 15vh;
+        margin-bottom: 0;
+    }
+    
+  }
+
+  @media screen and (max-width: 500px){
+    .container {
+        overflow: hidden;
+    }
+    .container svg {
+        margin-top: 20vh;
+    }
+    svg {
+        width: 160%;
+        height: 160%;
+    }
+    .social {
+        margin-left: -2vh;
+    }
+  }
+
+  @media screen and (max-width: 399px){
+    .container svg {
+        margin-left: -12vh;
+    }
+  }
